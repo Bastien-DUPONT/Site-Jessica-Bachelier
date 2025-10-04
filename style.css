@@ -86,7 +86,7 @@ footer{
     padding-left: 0vw;
     text-align: center;
     color: blanchedalmond;
-    line-height: 1.5em;
+
 }
 
 body{
@@ -120,14 +120,14 @@ h3{
 
 h4{
     font-family: Halogen;
-    font-size: 16dvh;
+    font-size: 14dvw;
     text-align: center;
     margin: 0;
 }
 
 h5{
     font-family: Halogen;
-    font-size: 10dvh;
+    font-size: 8dvw;
     text-align: center;
     margin: 0;
 }

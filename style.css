@@ -101,12 +101,12 @@ footer p, footer h1, footer h2, footer h3 {
 
 h1{
     font-family: Notedry;
-    font-size: 15dvh;
+    font-size: 10dvw;
 }
 
 h2{
     font-family: Halogen;
-    font-size: 6dvh;
+    font-size: 5.5dvh;
     color: rgb(73, 70, 66);
     text-align: center;
     border: solid 2px #000000 ;
@@ -114,7 +114,7 @@ h2{
 
 h3{
     font-family: Halogen;
-    font-size: 5dvh;
+    font-size: 4.5dvh;
     text-align: center;
 }
 

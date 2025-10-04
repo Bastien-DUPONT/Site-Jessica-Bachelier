@@ -42,13 +42,16 @@ footer{
 
 
 /* TAG   IMAGE */
-#decofeuille
+.decofeuille
 {
     margin-left: 2vw;
     margin-right: 2vw;
-    display: flex;
+    display: inline-flex;
+    align-items: center;    
+    justify-content: center;
 
 }
+
 
 #logos
 {
@@ -65,10 +68,10 @@ footer{
 
 #logos-v
 {
-    display: flex;
+    
     list-style: none;
     text-align: center;
-    padding-left: 30vw;
+    padding-left: auto;
 }
 
 
@@ -98,12 +101,12 @@ footer p, footer h1, footer h2, footer h3 {
 
 h1{
     font-family: Notedry;
-    font-size: 7dvw;
+    font-size: 15dvh;
 }
 
 h2{
     font-family: Halogen;
-    font-size: 4dvw;
+    font-size: 6dvh;
     color: rgb(73, 70, 66);
     text-align: center;
     border: solid 2px #000000 ;
@@ -111,20 +114,20 @@ h2{
 
 h3{
     font-family: Halogen;
-    font-size: 3dvw;
+    font-size: 5dvh;
     text-align: center;
 }
 
 h4{
     font-family: Halogen;
-    font-size: 10dvw;
+    font-size: 16dvh;
     text-align: center;
     margin: 0;
 }
 
 h5{
     font-family: Halogen;
-    font-size: 7dvw;
+    font-size: 10dvh;
     text-align: center;
     margin: 0;
 }
@@ -136,7 +139,7 @@ p{
 #TextPresentation
 {
 
-    font-size: 2dvw;
+    font-size: 3dvh;
     padding : 10px 20px 10px;
     padding-left: 5vw;
     padding-right: 5vw;

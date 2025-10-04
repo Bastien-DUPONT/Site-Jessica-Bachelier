@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept_fantasy - Lady Eli - Illustratrice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="MumPage" href="index.html">
+</head>
+
+
+
+<body>
+    <header>
+            <ul id="titresite">
+                <li>
+                    <a id="btnheader" href="index.html">
+                        <h1> Lady Eli </h1>
+                    </a>
+                </li>
+
+                <li>
+                    <a id="btnheader" href="index.html">
+                        <h3>Jessica Bachelier</h3>
+                    </a>
+                </li>
+            </ul>
+    </header>
+
+
+
+
+    <section id="section1" class="container">
+        <img src="ILLUS/bachelier-jessica-illustration-loutres-meduses.jpg"
+            style="width: 98.75vw; height: 70vh; object-fit: cover;"
+            alt="Bachelier-jessica-illustration-couverture-Loutres">
+        <h5>- Concept fantastiques -</h5>
+        <p id="TextPresentation">
+            Quelques illustrations de concept art, faites de manière complètement digitale,<br> sorties tout droit de mon imagination…
+             <br><br><br>
+        </p>
+        <div class="cat-wrap">
+            <button class="btnCat" data-target="meeewSection" aria-expanded="false">
+                <img src="DECOS/chat1.png" alt="Jessica_Bachelier_Decochat1"
+                    style="width: 20vw; height: auto; object-fit: cover;">
+            </button>
+            <div id="meeewSection" class="meeew" role="status" aria-live="polite">Meeew</div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <ul id="contactlist">
+            <li>
+                <img src="ILLUS/bachelier-jessica-illustration-loutres-meduses.jpg" style="width: 90vw; height: auto; object-fit: cover;"alt="Bachelier-jessica-illustration-couverture-Loutres">
+            </li>
+            <li>
+                <img src="ILLUS/bachelier-jessica-illustration-deesse-de-leau.jpg" style="width: 90vw; height: auto; object-fit: cover;"alt="Bachelier-jessica-illustration-couverture-déesse">
+            </li>
+            <li>
+                <img src="ILLUS/bachelier-jessica-illustration-foret-champignons.jpg" style="width: 90vw; height: auto; object-fit: cover;"alt="Bachelier-jessica-illustration-couverture-champignon">
+            </li>
+            
+        </ul>
+    </section>
+
+
+
+
+    <footer>
+        <ul id="logos">
+            <li>
+                <a href="https://www.instagram.com/_lady__eli_?igsh=MXFhODF3OGt3ZzRydA==">
+                    <img src="DECOS/logo-instagram.png" class="logo" style="width: 5vw; height: auto; object-fit: cover;"
+                        alt="logo instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61578233983950">
+                    <img src="DECOS//facebook-logo.png" class="logo" style="width: 5vw; height: auto; object-fit: cover;"
+                        alt="logo facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jessica-bachelier-7071082b3">
+                    <img src="DECOS/linkedin-logo.png" class="logo" style="width: 5vw; height: auto; object-fit: cover;"
+                        alt="logo linkedIN">
+                </a>
+            </li>
+        </ul>
+        <div class="cat-wrap">
+            <button class="btnCat" data-target="meeewFooter" aria-expanded="false">
+                <img src="DECOS/chat3.png" alt="Jessica_Bachelier_DecoChat3"
+                    style="width: 20vw; height: auto; object-fit: cover;">
+            </button>
+            <div id="meeewFooter" class="meeew" role="status" aria-live="polite">Meeew</div>
+        </div><br>
+        <button id="btnTop"><img src="DECOS/Fleche.png" class="logo" id="fleche_1"
+                style="width: 5vw; height: auto; object-fit: cover;" alt="flèche"></button><br><br>
+        <p id="messagefin">Site fait main avec amour par Bastien et Jessica Bachelier</p>
+    </footer>
+
+
+
+
+
+    <script>
+        const btnTop = document.getElementById("btnTop");
+        const btnCat = document.getElementById("btnCat");
+        const msg = document.getElementById("meeew");
+
+
+        if (btnTop) {
+            btnTop.addEventListener("click", function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+
+
+
+
+        // gestion de tous les boutons .btnCat 
+        document.querySelectorAll('.btnCat').forEach(btn => {
+            const targetId = btn.dataset.target;
+            const msg = document.getElementById(targetId);
+            if (!msg) return;
+
+            btn.addEventListener('click', () => {
+                msg.classList.add('show'); // affiche le message
+                btn.setAttribute('aria-expanded', "true");
+
+                // Retire automatiquement après 2s
+                setTimeout(() => {
+                    msg.classList.remove('show');
+                    btn.setAttribute('aria-expanded', "false");
+                }, 2000);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

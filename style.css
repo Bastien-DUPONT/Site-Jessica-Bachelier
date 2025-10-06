@@ -101,12 +101,12 @@ footer p, footer h1, footer h2, footer h3 {
 
 h1{
     font-family: Notedry;
-    font-size: 10dvw;
+    font-size: 7.5rem;
 }
 
 h2{
     font-family: Halogen;
-    font-size: 5.5dvh;
+    font-size: 3.5rem;
     color: rgb(73, 70, 66);
     text-align: center;
     border: solid 2px #000000 ;
@@ -114,20 +114,20 @@ h2{
 
 h3{
     font-family: Halogen;
-    font-size: 4.5dvh;
+    font-size: 4rem;
     text-align: center;
 }
 
 h4{
     font-family: Halogen;
-    font-size: 14dvw;
+    font-size: 9rem;
     text-align: center;
     margin: 0;
 }
 
 h5{
     font-family: Halogen;
-    font-size: 8dvw;
+    font-size: 6.8rem;
     text-align: center;
     margin: 0;
 }
@@ -139,7 +139,7 @@ p{
 #TextPresentation
 {
 
-    font-size: 3dvh;
+    font-size: 1.75rem;
     padding : 10px 20px 10px;
     padding-left: 5vw;
     padding-right: 5vw;
